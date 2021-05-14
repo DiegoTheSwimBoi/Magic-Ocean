@@ -1,0 +1,270 @@
+/* Working with subs.view.php */
+
+
+.imgtitle, #audios{
+    display: grid;
+    place-items: center;
+	margin-top: 200px;
+}
+
+.imgtitle > p{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.75);	
+}
+
+audio::-webkit-media-controls-panel{
+	background: #fbe57f;	
+}
+
+#aud{
+	font-size: 0.75em;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.75);	
+}
+
+
+#musicOption{
+	font-size: large;
+	width: 50%;
+	padding: 5px;
+	background: #fbe57f;
+	transition: all 0.5s ease-out;
+}
+
+#musicOption:hover{
+	background: #fbb47f;
+}
+
+
+
+
+body {
+    font-size: 3em;
+    background-image: url('../img/sub/subb.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+	background-position: center;
+}
+
+.wrap {
+    margin-top: 200px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.intro {
+    font-size: 72px;
+    margin-top: 300px;
+    margin-bottom: 480px;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.intro > p , .section > p{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.intro, .section {
+
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+    background: rgba(1, 89, 101, 0.77);
+    color: rgba(95, 192, 206, 0.64);
+}
+
+
+.move-picture {
+    padding: 5px;
+    border: 1px #b08f3e solid;
+    background-image: url('../img/sub/map.png');
+    width: 265px;
+    height: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.a1,.a2,.a4,.a5,.a6{
+	transition: all 0.5s ease-out;
+}
+
+
+.a1:hover,.a2:hover,.a4:hover,.a5:hover,.a6:hover{
+	box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+
+.move-picture > p {
+    text-align: center;
+}
+
+.move-picture > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.searchCover{
+    background: url('../img/sub/map.png');
+	width: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+
+
+.search {
+    border: 60px solid black;
+    -moz-border-image: url('../img/sub/ris1.png') 60 round round;
+    -webkit-border-image: url('../img/sub/ris1.png') 60 round round;
+    -o-border-image: url('../img/sub/ris1.png') 60 round round;
+    border-image: url('../img/sub/ris1.png') 60 round round;
+}
+
+.searchP {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.74);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input {
+	width: 70%;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+	width: 20%;
+    padding: 5px;
+    background: #A65000;
+    color: #D6FA3F;
+    border: none;
+	font-size: large;
+}
+
+
+
+.content {
+    margin: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 1rem;
+	max-width: 950px;
+}
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+
+
+@keyframes swing {
+	15% {
+		-webkit-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	30% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	50% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+
+	65% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(-1px);
+	}
+
+	80% {
+		-webkit-transform: translateY(0.5px);
+		transform: translateY(0.5px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes swing {
+	15% {
+		-webkit-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	30% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	50% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+
+	65% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(-1px);
+	}
+
+	80% {
+		-webkit-transform: translateY(0.5px);
+		transform: translateY(0.5px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+
+
+
+@media all and (max-width: 1028px), all and (min-width: 1600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+
+    body {
+        background-size: cover;
+    }
+
+    .intro {
+        margin-top: 140px;
+        margin-bottom: 500px;
+    }
+
+    .imgtitle{
+    display: none;
+    }
+
+    button, input {
+        height: 150%;
+        font-size: 2vw;
+    }
+
+
+}
+

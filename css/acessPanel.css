@@ -1,0 +1,62 @@
+body{
+background: url('../img/auth/intro.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-size: 2em;
+color: rgba(255,255,255,0.7);
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.center{
+	display: grid;
+	place-items: center;
+}
+
+.footer{
+	position: fixed;
+	bottom:0;
+	left: 40%;
+}
+
+.gems{
+	display: flex;
+	flex-direction: row;
+}
+
+.floder{
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px , 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(75px, auto);
+}
+
+.hole{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+gap: 40px;
+}
+
+.top{
+	margin-top: 6em;
+}
+
+.hole>div{
+	background: #c78f57;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	
+}	
+	
+	
+#sbtn{
+border: none;
+background: none;
+font-size: 1em;
+color: rgba(255,255,255,0.7);
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+

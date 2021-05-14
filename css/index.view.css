@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+	margin: 0;
+	background: black;
+}
+
+
+
+
+.center {
+	display: block;
+	background: black;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.center>div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+#header_map {
+    background-image: url('../img/index/header3.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+    height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer_book {
+    background-image: url('../img/index/ocean.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+    height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.icon{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+	
+
+
+
+.icon:hover {
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+
+.bookpage{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.bookpage:hover {
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+
+
+
+
+
+
+
+@keyframes swing {
+	15% {
+		-webkit-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	30% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	50% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+
+	65% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(-1px);
+	}
+
+	80% {
+		-webkit-transform: translateY(0.5px);
+		transform: translateY(0.5px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes swing {
+	15% {
+		-webkit-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	30% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	50% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+
+	65% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(-1px);
+	}
+
+	80% {
+		-webkit-transform: translateY(0.5px);
+		transform: translateY(0.5px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+
+@media all and (max-width: 1028px), all and (min-width: 1600px){
+	.centered{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

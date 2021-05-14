@@ -1,0 +1,18 @@
+body{
+background: url('../img/horny/horny.png');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.spoky{
+	padding: 30%;
+}
+
+
+@media all and (max-width: 1028px){
+
+body{
+background-size: auto;
+}
+}

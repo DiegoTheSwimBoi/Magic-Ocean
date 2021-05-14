@@ -1,0 +1,58 @@
+body{
+	font-size: 2em;
+	background: url('../img/auth/subb2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	color: rgba(255,255,255,0.7);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.wrap{
+	display: flex;
+	flex-direction: row;
+	margin-left: 60px;
+}
+
+
+
+.basic{
+	text-align: center;
+	margin: 30px;
+}
+
+
+.parts{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+input{
+	font-size: 2em;
+	border: none;
+}
+
+button{
+	border: none;
+	font-size: 1em;
+	padding: 20px;
+	width: 100%;
+	background:#61dc48;
+	color: rgba(255,255,255,0.7);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 1268px) {
+
+.wrap{
+	display: flex;
+	flex-direction: column;
+}
+body{
+	height: 100vh;
+}
+}

@@ -1,0 +1,185 @@
+﻿
+
+html,
+body {
+	font: 14px/20px Arial, Helvetica, sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+	margin: 0;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#btn {
+	background-color: black;
+	position: fixed;
+	border: none;
+	color: white;
+	padding: 0px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: none;
+	font-size: 34px;
+	margin: 4px 2px;
+	border-radius: 50%;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+}
+
+.button {
+	flex: 1 1 auto;
+	margin: 20px;
+	padding: 20px;
+
+	border: 2px solid black;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	transition: .3s;
+}
+
+
+.button:hover {
+	background-color: black;
+	color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+
+
+
+/* modal */
+
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.modalContent {
+
+	position: relative;
+	margin: 30px auto;
+	padding: 0;
+	max-width: 600px;
+	opacity: 1;
+	transition: opacity 0.4s;
+	animation-name: modalopen;
+	animation-duration: 0.4s;
+}
+
+
+.modalBody {
+
+    border: 1px solid #888;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+	grid-column: bodi;
+}
+
+
+
+.modalClose {
+	color: #bbb;
+	float: right;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.modalClose:hover,
+.modalClose:focus {
+	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes modalopen {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+/* Мобильный вид страницы */
+@media (max-width: 768px) {
+
+	/* Responsive modal */
+	.modalContent {
+		width: 94%;
+	}
+
+	.modalContent {
+		margin: 15px auto;
+	}
+}
+
+
+#left>img,
+#right>img{
+height: 100px;
+width: 100px;
+}
+
+#left>img:hover,
+#right>img:hover{
+opacity: 0.5;
+}
+
+#left>img:active,
+#right>img:active{
+opacity: 0.5;
+}
+
+#left{
+	grid-column: left;
+}
+
+#right{
+	grid-column: right;
+}
+
+.modalContent{
+	display: grid;
+grid-template-columns: 1fr [left] auto [bodi] 80% [right];
+grid-auto-rows:800px;
+align-items:center;
+}
+
+
+

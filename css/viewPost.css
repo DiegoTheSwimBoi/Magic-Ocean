@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+	font-size: 40px;
+	background: linear-gradient(#d660cc, #015965);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.wrap{
+	display: grid;
+	place-items: center;
+}
+
+.title{
+	color: white;
+}
+
+.title>h1{
+	text-align: center;
+}
+
+#href{
+	margin: 0 30px 0 30px;
+}
+
+.item{
+	border: 20px solid #E0E0E0;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px;
+	background: white;
+}
+
+button{
+	border: none;
+	background: none;
+	font-size: 40px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+
+
+@media all and (max-width: 1028px){
+	body{
+    height: 100vh;
+    }
+}

@@ -1,0 +1,54 @@
+.container{
+    display:grid;
+    place-items: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 2;
+	color: rgba(0,0,0,0.5);
+
+}
+
+#form{
+border: 1px solid black;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+padding: 80px;
+font-size: 20px;
+background: rgba(255,255,255,0.5);
+
+}
+#inputs{
+    border: 2px solid white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input{
+width: 65%;
+font-size: large;
+}
+
+
+
+#submit{
+    padding: 20px;
+	background: rgba(0,0,0,0.2);
+}
+
+
+.check{
+	text-decoration:none;
+	color: black;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}

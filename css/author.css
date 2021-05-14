@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+
+}
+.wrap{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+
+.right{
+	background: url('../img/auth/remote.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	color: rgba(255,255,255,0.7);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+
+
+.left{
+	background: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.left,.right{
+	padding: 20px;
+	font-size: 3em;
+}
+
+a{
+	color: rgb(255,255,255);
+	text-decoration: none;
+}
+
+#txt{
+	margin-top: 60px;
+}
+
+#txt>*{
+	margin: 30px;
+}
+
+
+
+.table{
+	margin-top: 200px;
+	color: white;
+	
+}
+
+button{
+	border: none;
+	background: none;
+	font-size: 1em;
+	color: white;
+}
+
+
+.right>div{
+	position: fixed;
+	bottom: 0;
+}
+
+

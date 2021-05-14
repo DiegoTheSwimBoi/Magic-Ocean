@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+}
+
+.menu{
+margin-bottom: 15vw;
+}
+
+header{
+    position: fixed; 
+    z-index: 2;
+    top: 0; 
+    width: 100%; 
+    background-color: black;
+}
+
+
+/*               A-side    intro  starts  here     */
+
+.Aside_hat,.sideItem{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+.Aside_hat>*,.sideItem>*{
+    text-decoration: none;
+    color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 50px;
+}
+
+.Aside_hat>*:hover,.sideItem>*:hover{
+	color:rgb(212, 0, 255);
+	transition:all 0.6s ease;
+}
+
+.hrefs{
+	margin-top: 150px;
+}
+
+.burger{
+	display: none;
+}
+
+
+@media all and (max-width: 900px){
+
+
+	.burger{
+		display: block;
+	}
+
+
+	header{
+        width: 100%;
+	}
+
+	.Aside_hat,.sideItem{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.Aside_hat>*,.sideItem>*{
+		font-size: 5vw;
+	}
+
+	.Aside_hat>*{
+		margin: 15px;
+	}
+
+
+}
+
+

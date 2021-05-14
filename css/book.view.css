@@ -1,0 +1,268 @@
+body{
+    font-size: 3em;
+    background-image: url('../img/sub/subb2.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+	background-position: center;
+	
+}
+
+a,a:hover,a:visited{
+    color: #00b9bd;
+    text-decoration: none;
+}
+
+.imgtitle, #audios{
+    display: grid;
+    place-items: center;
+	margin-top: 200px;
+}
+
+.imgtitle > p{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.75);	
+}
+
+audio::-webkit-media-controls-panel{
+	background: #70f5fa;	
+}
+
+#aud{
+	font-size: 0.75em;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.75);	
+}
+
+#musicOption{
+	font-size: large;
+	width: 50%;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	transition: all 0.5s ease-out;
+}
+
+#musicOption:hover{
+	background: #4486ff;
+}
+
+.wrap {
+    margin-top: 200px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    font-size: 72px;
+    margin-top: 300px;
+    margin-bottom: 480px;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.intro > p , .section > p{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.intro, .section {
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+	font-family: Droid;
+    background: rgb(61, 19, 168);
+    color: rgba(17, 196, 255, 0.64);
+}
+
+
+.content{
+    margin: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 1rem;
+	max-width: 950px;
+}
+
+
+.move-picture {
+    padding: 5px;
+    border: 1px #450060 solid;
+    background-image: url('../img/sub/lag.png');
+    width: 150px;
+    height: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.a1,.a2,.a4,.a5,.a6{
+	transition: all 0.5s ease-out;
+}
+
+
+.a1:hover,.a2:hover,.a4:hover,.a5:hover,.a6:hover{
+	box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+
+.move-picture > p {
+    text-align: center;
+	font-size: 0.5em;
+	font-family: Lato;
+}
+
+.move-picture > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.a7,.a8,.a9,.a10,.a11{
+	transition: all 0.5s ease-out;
+
+}
+
+
+.a7:hover,.a8:hover,.a9:hover,.a10:hover,.a11:hover{
+	box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+
+.searchCover{
+	width: 80%;
+	margin-top: -50px;
+}
+
+.search {
+    border: 20px solid #070060;
+	padding: 30px;
+	background: #1205bc;
+	border-bottom: none;
+}
+
+.searchP {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.74);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input {
+	width: 60%;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+	width: 20%;
+    padding: 5px;
+    background: blue;
+    color: #D6FA3F;
+    border: none;
+	font-size: large;
+}
+
+
+@keyframes swing {
+	15% {
+		-webkit-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	30% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	50% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+
+	65% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(-1px);
+	}
+
+	80% {
+		-webkit-transform: translateY(0.5px);
+		transform: translateY(0.5px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes swing {
+	15% {
+		-webkit-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	30% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	50% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+
+	65% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(-1px);
+	}
+
+	80% {
+		-webkit-transform: translateY(0.5px);
+		transform: translateY(0.5px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@media all and (max-width: 1028px), all and (min-width: 1600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+
+    body {
+        background-size: cover;
+    }
+
+    .intro {
+        margin-top: 140px;
+        margin-bottom: 500px;
+    }
+
+    .imgtitle{
+    display: none;
+    }
+
+    button, input {
+        height: 150%;
+        font-size: 2vw;
+    }
+
+
+}
+
+
+
